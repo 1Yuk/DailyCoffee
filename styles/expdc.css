@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 62.5%;
+}
+
+/* ---------------------------------------- */
+
+#header {
+    padding: 15px 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 0px 18px rgba(0, 0, 0, .3);
+}
+.navbarIzquierdo {
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+.navbarIzquierdo ul, .navbarIzquierdo li {
+    display: inline;
+}
+.navbarIzquierdo a, .navbarDerecho a {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: .7rem;
+    font-weight: 600;
+    list-style-type: none;
+    text-decoration: none;
+}
+.navbarIzquierdo ul li a {
+    margin: 0 30px;
+}
+.navbarDerecho a:hover, .navbarIzquierdo a:hover  {
+    text-decoration: underline;
+}
+.navbarDerecho {
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+}
+.navbarDerecho i {
+    font-size: .8rem;
+    color: rgb(255, 0, 0);
+}
+
+/* ---------------------------------------- */
+
+.bannerExp {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(30, 57, 50);
+}
+.bannerExp h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2.1rem;
+    font-family: 'Montserrat';
+    padding: 30px;
+    text-align: center;
+}
+.subTitulo {
+    margin: 60px;
+    height: 70px;
+}
+.subTitulo p {
+    text-align: center;
+    color: rgb(30, 57, 50);
+    font-size: 1.7rem;
+    font-family: 'Mada';
+    font-weight: 900;
+    padding: 0px 240px;
+}
+
+/* ---------------------------------------- */
+
+.contenedorFotos {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.boxFotos1 img, .boxFotos2 img{
+    width: 470px;
+    height: 300px;
+}
+.texto, .texto2 {
+    float: right;
+    height: 300px;
+    width: 470px;
+    padding: 80px;
+    background-color: rgb(242, 240, 235);
+}
+.texto2 {
+    float: left;
+    padding: 95px;
+}
+.texto h2, .texto2 h2 {
+    color: rgb(0, 120, 88);
+    font-size: 1.9rem;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+.texto p, .texto2 p {
+    text-align: center;
+    color: rgb(30, 57, 50);
+    font-size: 1.2rem;
+    font-family: 'Mada';
+    font-weight: 900;
+}
+
+/* ---------------------------------------- */
+
+.redesContenedores {
+    height: 100px;
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    padding: 35px 0;
+}
+.redesContenedores a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: auto 20px;
+    color: rgb(255, 255, 255);
+}
+.redesTexto {
+    color: rgb(255, 255, 255);
+    font-size: .7rem;
+    padding-top: 5px;
+    font-family: 'Overpass';
+}

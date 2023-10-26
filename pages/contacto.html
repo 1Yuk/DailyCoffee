@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Author: EnzoM.">
+    <title>DailyCoffee</title>
+    <link rel="stylesheet" href="./contactostyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@300&family=Montserrat:wght@200;400;900&family=Overpass:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/cafe.png" type="image/x-icon">
+</head>
+<body>
+
+    <header id="header">
+        <nav class="navbarIzquierdo">
+            <ul>
+                <li><a href="../index.html">MENÚ</a></li>
+                <li><a href="../cafe/cafe.html">CAFÉ</a></li>
+                <li><a href="../experiencia_dc/experiencadc.html">EXPERIENCIA DAILYCOFFEE</a></li>
+                <li><a href="../contacto/contacto.html">CONTACTO</a></li>
+            </ul>
+            <div class="navbarDerecho">
+                <i class="ri-map-pin-line"></i>
+                <a href="../ubicacion/ubicacion.html">Localizar Tienda</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <section class="contenedorPrincipal">
+            <div class="cuadradoBlanco">
+                <h2 class="subTitulo">Contactanos si queres trabajar con nuestro equipo</h2>
+            </div>
+            <article class="cuadradoVerdeForm">
+                <div class="contenedorForm">
+                    <h2>Contacto</h2>
+                    <form action="formulario.php" method="POST">
+                        <div class="formGrupo">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="formGrupo">
+                            <label for="email">Correo:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="formGrupo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        </div>
+                        <div class="formGrupo">
+                            <input class="boton" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </article>
+            <article class="cuadradoBlancoContenedor">
+                <div class="rectangulo"></div>
+                <img src="./persona.png" alt="Empleado atendiendo a nuestros clientes">
+            </article>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="redesContenedores">
+            <a href=""><i class="ri-facebook-fill"></i></a>
+            <a href=""><i class="ri-twitter-fill"></i></a>
+            <a href="https://www.linkedin.com/in/enzo-mansilla/" target="_blank"><i class="ri-linkedin-line"></i></a>
+            <div class="redesTexto">
+                <p>Ⓒ 2023. DailyCofee Company. Reservados todos los derechos</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

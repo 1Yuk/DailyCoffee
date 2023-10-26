@@ -21,6 +21,13 @@ font-family: 'Mada';
 .navbar-nav {
     width: 80%;
 }
+.navbar-nav li a, .navbar-left a{
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 .navbar-left {
     display: flex;
     justify-content: flex-end;

@@ -39,103 +39,66 @@ font-family: 'Mada';
     color: rgb(255, 0, 0);
 }
 
-
-
-/* #header {
-    padding: 15px 0;
-    text-align: center;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 5px 0px 18px rgba(0, 0, 0, .3);
-}
-.navbarIzquierdo {
-    float: left;
-    text-align: left;
-    width: 100%;
-}
-.navbarIzquierdo ul, .navbarIzquierdo li {
-    display: inline;
-}
-.navbarIzquierdo a, .navbarDerecho a {
-    color: rgb(0, 0, 0);
-    font-family: 'Montserrat';
-    font-size: .7rem;
-    font-weight: 600;
-    list-style-type: none;
-    text-decoration: none;
-}
-.navbarIzquierdo ul li a {
-    margin: 0 30px;
-}
-.navbarDerecho a:hover, .navbarIzquierdo a:hover  {
-    text-decoration: underline;
-}
-.navbarDerecho {
-    float: right;
-    text-align: right;
-    margin-right: 20px;
-}
-.navbarDerecho i {
-    font-size: .8rem;
-    color: rgb(255, 0, 0);
-} */
-
 /* ---------------------------------------- */
 
-.contenidoPrincipal {
+#main {
     height: 100vh;
 }
-.cajaDeContenidos1 {
-    margin: 0 100px;
-    position: relative;
+.contenedorMain {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.cajaIzquierda {
-    position: absolute;
-    left: 0;
-    top: 180px;
-    width: 50%;
-    padding: 0 30px;
+.boxImg {
+    max-width: 100%;
+    margin: 0 auto;
 }
-.cajaIzquierda h1 {
+.boxImg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.boxText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boxText h1{
     color: rgb(0, 120, 88);
-    font-size: 2.7rem;
+    text-align: center;
+    font-size: 2.5rem;
     font-family: 'Montserrat';
-    margin-bottom: 20px;
+    font-weight: bold;
 }
-.cajaIzquierda p {
+.boxText p {
     color: rgb(0, 0, 0);
     font-size: 1rem;
     font-family: 'Mada';
     font-weight: 900;
 }
-.cajaIzqBoton {
-    position: absolute;
-    top: 180px;
-    left: 130px;
-}
-.cajaIzqBoton button {
-    padding: 10px;
+.boxText button {
+    padding: 5px;
     border: transparent;
     background-color: rgb(0, 120, 88);
     color: rgb(255, 255, 255);
     border-radius: 20px;
-    font-size: .9rem;
+    font-size: 1rem;
     font-family: 'Mada';
 }
-.cajaDerecha {
-    position: absolute;
-    right: 0;
-    top: 50px;
-    width: 50%;
-}
-.cajaDerecha img {
-    max-width: 100%;
-    height: auto;
-}
 
+.resena {
+    padding: 20px 25px;
+    background-color: rgb(255, 255, 255);
+}
+.resena h2 {
+    color: rgb(0, 120, 88);
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Mada';
+}
 /* ---------------------------------------- */
 
-.contenidoSecundario {
+/* .contenidoSecundario {
     height: 100vh;
     background-color: rgb(255, 255, 255);
 }
@@ -177,7 +140,7 @@ font-family: 'Mada';
 
 /* ---------------------------------------- */
 
-.redesContenedores {
+/* .redesContenedores {
     height: 100px;
     background-color: rgb(51, 51, 51);
     text-align: center;
@@ -194,4 +157,4 @@ font-family: 'Mada';
     font-size: .7rem;
     padding-top: 5px;
     font-family: 'Overpass';
-}
+}  */

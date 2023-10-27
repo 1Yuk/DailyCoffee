@@ -29,6 +29,7 @@ font-family: 'Mada';
     text-transform: uppercase;
 }
 .navbar-left {
+    width: 150px;
     display: flex;
     justify-content: flex-end;
     align-items: center;

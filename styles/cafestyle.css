@@ -10,48 +10,62 @@ body {
 
 /* ---------------------------------------- */
 
-#header {
-    padding: 15px 0;
-    text-align: center;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 5px 0px 18px rgba(0, 0, 0, .3);
+/* NAVBAR */
+.navbar-nav {
+    width: 80%;
 }
-.navbarIzquierdo {
-    float: left;
-    text-align: left;
-    width: 100%;
-}
-.navbarIzquierdo ul, .navbarIzquierdo li {
-    display: inline;
-}
-.navbarIzquierdo a, .navbarDerecho a {
+.navbar-nav li a, .navbar-left a{
     color: rgb(0, 0, 0);
     font-family: 'Montserrat';
-    font-size: .7rem;
+    font-size: .75rem;
     font-weight: 600;
-    list-style-type: none;
-    text-decoration: none;
+    text-transform: uppercase;
 }
-.navbarIzquierdo ul li a {
-    margin: 0 30px;
+.navbar-left {
+    width: 155px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
-.navbarDerecho a:hover, .navbarIzquierdo a:hover  {
-    text-decoration: underline;
-}
-.navbarDerecho {
-    float: right;
-    text-align: right;
-    margin-right: 20px;
-}
-.navbarDerecho i {
-    font-size: .8rem;
+.navbar-left i {
+    font-size: 1rem;
     color: rgb(255, 0, 0);
 }
+/* CARRUSEL */
 
-/* ---------------------------------------- */
+.carouselImgage {
+    height: calc(100vh - 80px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bgImg1 {
+    background-image: url(../assets/coffeeC.jpg);
+}
+.bgImg2 {
+    background-image: url(../assets/coffeeIce.jpg);
+}
+.bgImg3 {
+    background-image: url(../assets/frappuccinoC.jpg);
+}
+.carousel-caption {
+    transform: translateY(-50%);
+    bottom: initial;
+    top: 50%;
+}
+.carousel-caption h5 {
+    font-size: 2.25rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: rgb(0, 120, 88);
+}
+.carousel-caption p {
+    font-size: 1.1rem;
+    font-family: 'Mada';
+    color: rgb(255, 255, 255);
+}
 
-.contenidoPrincipal {
+/* .contenidoPrincipal {
     height: auto;
 }
 .contenidoCentrado {
@@ -104,15 +118,15 @@ body {
     color: rgb(0, 0, 0);
     font-size: .9rem;
     font-family: 'Montserrat';
-}
+} */
 
 /* ---------------------------------------- */
 
 .redesContenedores {
-    height: 100px;
+    height: 80px;
     background-color: rgb(51, 51, 51);
     text-align: center;
-    padding: 35px 0;
+    padding: 20px 0;
 }
 .redesContenedores a {
     text-decoration: none;

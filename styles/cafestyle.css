@@ -5,6 +5,7 @@
 }
 body {
     font-size: 62.5%;
+    font-family: 'Montserrat';
     background-color: rgb(212, 233, 226);
 }
 
@@ -16,7 +17,6 @@ body {
 }
 .navbar-nav li a, .navbar-left a{
     color: rgb(0, 0, 0);
-    font-family: 'Montserrat';
     font-size: .75rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -55,7 +55,6 @@ body {
 }
 .carousel-caption h5 {
     font-size: 2.25rem;
-    font-family: 'Montserrat';
     font-weight: bold;
     color: rgb(0, 120, 88);
 }
@@ -64,63 +63,80 @@ body {
     font-family: 'Mada';
     color: rgb(255, 255, 255);
 }
+/* SECTION 2 BEBIDAS & COMIDAS */
 
-/* .contenidoPrincipal {
-    height: auto;
+.banner {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px 0px 10px;
 }
-.contenidoCentrado {
-    height: inherit;
-    width: 70%;
-    margin: 0 auto;
-}
-.titulo {
-    padding: 60px 0;
-}
-.titulo h2 {
+.banner h2 {
     color: rgb(0, 120, 88);
-    font-size: 1.7rem;
-    font-family: 'Montserrat';
+    font-weight: bold;
 }
-.titulo p {
-    color: rgb(97, 97, 97);
-    font-size: 1rem;
-    font-family: 'Mada';
-    font-weight: 900;
-}
-.bebidas p, .comidas p {
-    border-top: 1px solid rgb(0, 0, 0);
-    border-bottom: 1px solid rgb(0, 0, 0);
-    padding: 10px 15px;
-    color: rgb(0, 0, 0);
-    font-size: .9rem;
-    font-family: 'Montserrat';
-    font-weight: 900;
-}
-.contenidoBebidas, .contenidoComidas {
-    margin: 50px 0;
+.banner p {
+    margin: 0;
     text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Mada';
+    color: rgb(51, 51, 51);
 }
+
+.bebidas {
+    height: 800px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.border {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rectangulo {
+    height: 25px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #333;
+}
+.rectangulo h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
 .box {
-    display: inline-block;
     height: 180px;
     width: 180px;
-    margin: 20px 60px;
-    padding: 20px;
-    background-color: rgb(30, 57, 50);
+    text-align: center;
+    margin-bottom: 10px;
     border-radius: 50%;
-}
-.box img {
-    height: 140px;
-    width: 140px;
+    background-color: rgb(30, 57, 50);
 }
 .box h2 {
-    margin: 40px 0;
-    color: rgb(0, 0, 0);
-    font-size: .9rem;
-    font-family: 'Montserrat';
-} */
+    margin-top: 10px;
+    margin-bottom: 0;
+}
 
-/* ---------------------------------------- */
+.comidas {
+    height: 580px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/* FOOTER */
 
 .redesContenedores {
     height: 80px;
@@ -139,4 +155,31 @@ body {
     font-size: .7rem;
     padding-top: 5px;
     font-family: 'Overpass';
+}
+/* MEDIA QUERYS */
+
+@media only screen and (min-width: 576px){ 
+    .carouselImgage {
+        height: calc(100vh - -20px);
+    }
+    .bebidas {
+        height: 230px;
+        width: 100%;
+        flex-direction: row;
+    }
+    .box {
+        height: 150px;
+        width: 150px;
+    }
+    .box h2 {
+        font-size: 1.2rem;
+    }
+    .box img {
+        width: 100%;
+    }
+    .comidas {
+        height: 280px;
+        width: 100%;
+        flex-direction: row;
+    }
 }

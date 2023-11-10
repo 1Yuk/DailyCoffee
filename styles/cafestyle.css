@@ -1,185 +1,258 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 body {
-    font-size: 62.5%;
-    font-family: 'Montserrat';
-    background-color: rgb(212, 233, 226);
+  font-size: 62.5%;
+  background-color: rgb(212, 233, 226);
 }
 
-/* ---------------------------------------- */
+.navbar-brand {
+  margin-right: 0;
+}
 
-/* NAVBAR */
 .navbar-nav {
-    width: 80%;
+  width: 80%;
 }
-.navbar-nav li a, .navbar-left a{
-    color: rgb(0, 0, 0);
-    font-size: .75rem;
-    font-weight: 600;
-    text-transform: uppercase;
+
+.nav-item a, .navbar-left a {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 0.75rem;
+  font-weight: bold;
 }
+.nav-item a:hover, .navbar-left a:hover {
+  color: rgb(0, 117, 72);
+}
+.nav-item a::after, .navbar-left a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: rgb(0, 117, 72);
+  transition: width 0.3s ease-in-out;
+}
+.nav-item a:hover::after, .navbar-left a:hover::after {
+  width: 100%;
+}
+
 .navbar-left {
-    width: 155px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  width: 155px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .navbar-left i {
-    font-size: 1rem;
-    color: rgb(255, 0, 0);
+  font-size: 1rem;
+  color: rgb(255, 0, 0);
 }
-/* CARRUSEL */
 
-.carouselImgage {
-    height: calc(100vh - 80px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.redesContenedores {
+  height: 85px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: rgb(51, 51, 51);
 }
+.redesContenedores a {
+  margin: auto 20px;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.redesContenedores a:hover {
+  color: rgb(0, 117, 72);
+}
+.redesContenedores p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.redesTexto {
+  color: rgb(255, 255, 255);
+  font-family: "Overpass";
+  font-size: 1rem;
+}
+
+.bgImg1, .bgImg2, .bgImg3 {
+  height: calc(100vh - 80px);
+}
+
 .bgImg1 {
-    background-image: url(../assets/coffeeC.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/bgImg1.webp");
+  background-size: cover;
+  background-position: center;
 }
+
 .bgImg2 {
-    background-image: url(../assets/coffeeIce.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/bgImg2.webp");
+  background-size: cover;
+  background-position: center;
 }
+
 .bgImg3 {
-    background-image: url(../assets/frappuccinoC.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/bgImg3.webp");
+  background-size: cover;
+  background-position: center;
 }
+
 .carousel-caption {
-    transform: translateY(-50%);
-    bottom: initial;
-    top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+  top: 50%;
 }
-.carousel-caption h5 {
-    font-size: 2.25rem;
-    font-weight: bold;
-    color: rgb(0, 120, 88);
+.carousel-caption h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: rgb(0, 117, 72);
 }
 .carousel-caption p {
-    font-size: 1.1rem;
-    font-family: 'Mada';
-    color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  font-family: "Mada";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 0 8px;
 }
-/* SECTION 2 BEBIDAS & COMIDAS */
 
 .banner {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 10px 0px 10px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 10px 0px 10px;
 }
 .banner h2 {
-    color: rgb(0, 120, 88);
-    font-weight: bold;
+  color: rgb(0, 117, 72);
+  font-weight: bold;
 }
 .banner p {
-    margin: 0;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: 'Mada';
-    color: rgb(51, 51, 51);
+  margin: 0;
+  font-family: "Mada";
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(51, 51, 51);
 }
 
 .bebidas {
-    height: 800px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.border {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.rectangulo {
-    height: 25px;
-    width: 400px;
-    border-radius: 5px;
-    background-color: #333;
-}
-.rectangulo h2 {
-    margin: 0;
-    font-size: 1.3rem;
-    text-align: center;
-    color: rgb(255, 255, 255);
+  height: 800px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .box {
-    height: 180px;
-    width: 180px;
-    text-align: center;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    background-color: rgb(30, 57, 50);
+  height: 190px;
+  width: 190px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  background-color: rgb(30, 57, 50);
+  transition: all 0.3s;
 }
 .box h2 {
-    margin-top: 10px;
-    margin-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.box:hover {
+  transform: scale(1.2);
+  background-color: rgb(255, 255, 255);
+}
+
+.border {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.border .rectangulo {
+  height: 25px;
+  width: 400px;
+  border-radius: 4px 4px 22px 22px;
+  background-color: rgb(51, 51, 51);
+}
+.border .rectangulo h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 .comidas {
-    height: 580px;
-    padding: 10px;
+  height: 580px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedorMain {
+    flex-direction: row-reverse;
+  }
+  .contenedorMain .boxImg {
+    width: 50%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-}
-/* FOOTER */
-
-.redesContenedores {
-    height: 80px;
-    background-color: rgb(51, 51, 51);
-    text-align: center;
-    padding: 20px 0;
-}
-.redesContenedores a {
-    text-decoration: none;
+  }
+  .contenedorMain .boxText {
+    width: 50%;
+  }
+  .contenedorMain .boxText h1 {
+    font-size: 4.1rem;
+  }
+  .contenedorMain .boxText p {
     font-size: 1.4rem;
-    margin: auto 20px;
-    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .contenedorMain .boxText button {
+    font-size: 1.2rem;
+  }
+  .contenedorCards {
+    flex-direction: row;
+  }
+  .contenedorCards .cCard {
+    max-height: 470px;
+  }
+  .contenedorCards .cCard .cardBody h2 {
+    font-size: 1rem;
+  }
 }
-.redesTexto {
-    color: rgb(255, 255, 255);
-    font-size: .7rem;
-    padding-top: 5px;
-    font-family: 'Overpass';
+@media only screen and (min-width: 576px) {
+  .carouselImgage {
+    height: calc(100vh + 20px);
+  }
+  .bebidas {
+    height: 230px;
+    width: 100%;
+    flex-direction: row;
+  }
+  .box {
+    height: 150px;
+    width: 150px;
+  }
+  .box img {
+    width: 100%;
+  }
+  .box h3 {
+    font-size: 1.2rem;
+  }
+  .comidas {
+    height: 280px;
+    width: 100%;
+    flex-direction: row;
+  }
 }
-/* MEDIA QUERYS */
 
-@media only screen and (min-width: 576px){ 
-    .carouselImgage {
-        height: calc(100vh - -20px);
-    }
-    .bebidas {
-        height: 230px;
-        width: 100%;
-        flex-direction: row;
-    }
-    .box {
-        height: 150px;
-        width: 150px;
-    }
-    .box h2 {
-        font-size: 1.2rem;
-    }
-    .box img {
-        width: 100%;
-    }
-    .comidas {
-        height: 280px;
-        width: 100%;
-        flex-direction: row;
-    }
-}
+/*# sourceMappingURL=cafestyle.css.map */

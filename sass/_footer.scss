@@ -1,5 +1,5 @@
 .redesContenedores {
-    height: 80px;
+    height: 85px;
     padding: 10px 0;
     text-align: center;
     background-color: rgb(51, 51, 51);
@@ -11,6 +11,10 @@
     }
     a:hover {
         color: $primary
+    }
+    p {
+        margin: 0;
+        font-size: .8rem;
     }
 }
 .redesTexto {

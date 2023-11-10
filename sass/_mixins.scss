@@ -1,0 +1,18 @@
+@mixin display ($display, $fdirec, $jcontent, $aitems) {
+    display: $display;
+    flex-direction: $fdirec;
+    justify-content: $jcontent;
+    align-items: $aitems;
+}
+@mixin btn ($color, $padding, $border, $bradius, $bgcolor) {
+    color: $color;
+    padding: $padding;
+    border: $border;
+    border-radius: $bradius;
+    background-color: $bgcolor;
+}
+@mixin fonts ($font, $fontsize, $fontweight) {
+    font-family: $font;
+    font-size: $fontsize;
+    font-weight: $fontweight;
+}

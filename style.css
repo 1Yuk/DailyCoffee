@@ -1,19 +1,7 @@
-@charset "UTF-8";
-/* FUENTES DE LA PÁGINA */
-/* 
-font-family: 'Montserrat';
-font-family: 'Overpass';
-font-family: 'Mada';
-*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-size: 62.5%;
-  background-color: rgb(212, 233, 226);
 }
 
 .navbar-brand {
@@ -26,10 +14,10 @@ body {
 
 .nav-item a, .navbar-left a {
   color: rgb(0, 0, 0);
+  text-transform: uppercase;
   font-family: "Montserrat";
   font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: bold;
 }
 .nav-item a:hover, .navbar-left a:hover {
   color: rgb(0, 117, 72);
@@ -55,6 +43,218 @@ body {
 .navbar-left i {
   font-size: 1rem;
   color: rgb(255, 0, 0);
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedorMain {
+    flex-direction: row-reverse;
+  }
+  .contenedorMain .boxImg {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedorMain .boxText {
+    width: 50%;
+  }
+  .contenedorMain .boxText h1 {
+    font-size: 4.1rem;
+  }
+  .contenedorMain .boxText p, .contenedorMain .boxText button {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .contenedorMain .boxText button {
+    font-size: 1.2rem;
+  }
+  .contenedorCards {
+    flex-direction: row;
+  }
+  .contenedorCards .cCard {
+    max-height: 470px;
+  }
+  .contenedorCards .cCard .cardBody h2 {
+    font-size: 1rem;
+  }
+}
+.contenedorMain {
+  height: calc(100vh + 36px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorMain .boxImg {
+  text-align: center;
+}
+.contenedorMain .boxImg img {
+  max-width: 93%;
+  height: auto;
+  object-fit: cover;
+}
+.contenedorMain .boxText {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorMain .boxText h1 {
+  color: rgb(0, 117, 72);
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.contenedorMain .boxText p, .contenedorMain .boxText button {
+  color: rgb(0, 0, 0);
+  font-family: "Mada";
+  font-size: 1rem;
+  font-weight: bold;
+}
+.contenedorMain .boxText button {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border: transparent;
+  border-radius: 20px;
+  background-color: rgb(0, 117, 72);
+}
+
+.headerResena {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(255, 255, 255);
+}
+.headerResena h2 {
+  text-align: center;
+  color: rgb(0, 117, 72);
+  font-size: 2rem;
+  font-family: "Mada";
+}
+
+.contenedorCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorCards .cCard {
+  max-width: 320px;
+  border: 1px solid rgb(0, 117, 72);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+.contenedorCards .cCard .person1, .contenedorCards .cCard .person2, .contenedorCards .cCard .person3 {
+  height: 250px;
+}
+.contenedorCards .cCard .person1 {
+  background-image: url("/assets/person1.png");
+  background-size: cover;
+  background-position: center;
+}
+.contenedorCards .cCard .person2 {
+  background-image: url("/assets/person2.png");
+  background-size: cover;
+  background-position: center;
+}
+.contenedorCards .cCard .person3 {
+  background-image: url("/assets/person3.png");
+  background-size: cover;
+  background-position: center;
+}
+.contenedorCards .cCard .cardBody {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorCards .cCard .cardBody h2 {
+  color: rgb(0, 117, 72);
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+.contenedorCards .cCard .cardBody p, .contenedorCards .cCard .cardBody .contenedorMain .boxText button, .contenedorMain .boxText .contenedorCards .cCard .cardBody button {
+  margin: 0;
+  padding: 0 30px;
+  font-size: 1rem;
+  font-family: "Mada";
+  text-align: center;
+}
+.contenedorCards .cCard .cardBody button {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border: transparent;
+  border-radius: 20px;
+  background-color: rgb(0, 117, 72);
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.redesContenedores {
+  height: 80px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: rgb(51, 51, 51);
+}
+.redesContenedores a {
+  margin: auto 20px;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.redesContenedores a:hover {
+  color: rgb(0, 117, 72);
+}
+
+.redesTexto {
+  color: rgb(255, 255, 255);
+  font-family: "Overpass";
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedorMain {
+    flex-direction: row-reverse;
+  }
+  .contenedorMain .boxImg {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedorMain .boxText {
+    width: 50%;
+  }
+  .contenedorMain .boxText h1 {
+    font-size: 4.1rem;
+  }
+  .contenedorMain .boxText p, .contenedorMain .boxText button {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .contenedorMain .boxText button {
+    font-size: 1.2rem;
+  }
+  .contenedorCards {
+    flex-direction: row;
+  }
+  .contenedorCards .cCard {
+    max-height: 470px;
+  }
+  .contenedorCards .cCard .cardBody h2 {
+    font-size: 1rem;
+  }
+}
+body {
+  font-size: 62.5%;
+  background-color: rgb(212, 233, 226);
 }
 
 /*# sourceMappingURL=style.css.map */

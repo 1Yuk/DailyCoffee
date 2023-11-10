@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 .navbar-brand {
     margin-right: 0;
 }
@@ -9,10 +10,8 @@
 .nav-item {
     a {
         color: $secondary;
-        font-family: 'Montserrat';
-        font-size: .75rem;
-        font-weight: 600;
         text-transform: uppercase;
+        @include fonts ($font-primary, .75rem, bold);
         &:hover {
             color: $primary;
         }
@@ -35,7 +34,7 @@
     align-items: center;
     gap: 5px;
     i {
-        font-size: 1rem;
+        font-size: $font-size-xs;
         color: rgb(255, 0, 0);
     }
     @extend .nav-item;

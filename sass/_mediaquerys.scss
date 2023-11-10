@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px) {
+    .contenedorMain {
+        flex-direction: row-reverse;
+        .boxImg {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .boxText {
+            width: 50%;
+            h1 {
+                font-size: 4.1rem;
+            }
+            p {
+                font-size: $font-size-medium;
+                text-align: center;
+            }
+            button {
+                font-size: $font-size-small;
+            }
+        }
+    }
+    .contenedorCards {
+        flex-direction: row;
+        .cCard {
+            max-height: 470px;
+            .cardBody {
+                h2 {
+                    font-size: $font-size-xs;
+                }
+            }
+        }
+    }
+}

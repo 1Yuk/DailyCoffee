@@ -1,19 +1,16 @@
-@import 'variables';
-/* FUENTES DE LA PÁGINA */
-
-/* 
-font-family: 'Montserrat';
-font-family: 'Overpass';
-font-family: 'Mada';
-*/
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+@import 'variables';
+@import 'navbar';
+@import 'main';
+@import 'mixins';
+@import 'footer';
+@import 'mediaquerys';
+
 body {
     font-size: 62.5%;
     background-color: $background-color;
 }
-@import 'navbar';

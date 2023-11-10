@@ -1,0 +1,20 @@
+.redesContenedores {
+    height: 80px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+    a {
+        margin: auto 20px;
+        font-size: $font-size-medium;
+        color: $tertiary;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $primary
+    }
+}
+.redesTexto {
+    color: $tertiary;
+    font-family: $font-optional;
+    font-size: $font-size-xs;
+}

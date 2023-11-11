@@ -35,7 +35,7 @@
     }
 }
 
-@media only screen and (min-width: 576px){ 
+@media only screen and (min-width: 576px){
     .carouselImgage {
         height: calc(100vh - -20px);
     }
@@ -58,5 +58,30 @@
         height: 280px;
         width: 100%;
         flex-direction: row;
+    }
+    .contenedorSecundario {
+        height: 100%;
+        .boxImg {
+            flex-direction: row;
+            .img, .img2 {
+                height: 50vh;
+                width: 50vw;
+            }
+            .texto {
+                height: 50vh;
+                width: 50vw;
+            }
+        }
+        .boxImg2 {
+            flex-direction: row-reverse;
+            .img, .img2 {
+                height: 50vh;
+                width: 50vw;
+            }
+            .texto2 {
+                height: 50vh;
+                width: 50vw;
+            }
+        }
     }
 }

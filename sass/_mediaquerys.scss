@@ -84,4 +84,10 @@
             }
         }
     }
+    .contenedorUbi {
+        flex-direction: row;
+        .box {
+            flex-direction: row !important;
+        }
+    }
 }

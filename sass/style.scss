@@ -95,7 +95,7 @@
 }
 @each $carousel in bgImg1, bgImg2, bgImg3 {
     .#{$carousel} {
-        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/#{$carousel}.webp");
+        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/#{$carousel}.webp");
         background-size: cover;
         background-position: center;
     }

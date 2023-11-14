@@ -59,7 +59,7 @@
         }
         @each $img in person1, person2, person3 {
             .#{$img} {
-                background-image: url("/assets/#{$img}.png");
+                background-image: url("./assets/#{$img}.png");
                 background-size: cover;
                 background-position: center;
             }

@@ -123,17 +123,17 @@ body {
   height: 250px;
 }
 .contenedorCards .cCard .person1 {
-  background-image: url("/assets/person1.png");
+  background-image: url("./assets/person1.png");
   background-size: cover;
   background-position: center;
 }
 .contenedorCards .cCard .person2 {
-  background-image: url("/assets/person2.png");
+  background-image: url("./assets/person2.png");
   background-size: cover;
   background-position: center;
 }
 .contenedorCards .cCard .person3 {
-  background-image: url("/assets/person3.png");
+  background-image: url("./assets/person3.png");
   background-size: cover;
   background-position: center;
 }

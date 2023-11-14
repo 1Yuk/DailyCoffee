@@ -2,9 +2,8 @@
 @import 'variables';
 @import 'navbar';
 @import 'mixins';
-@import 'footer';
-@import 'mediaquerys';
 
+// APARTADO DEL INDEX
 .contenedorMain {
     height: calc(100vh + 36px);
     @include display (flex, column, center, center);
@@ -89,3 +88,207 @@
         }
     }
 }
+
+// APARTADO DE CAFÉ
+.bgImg1, .bgImg2, .bgImg3 {
+    height: calc(100vh - 80px);
+}
+@each $carousel in bgImg1, bgImg2, bgImg3 {
+    .#{$carousel} {
+        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/#{$carousel}.webp");
+        background-size: cover;
+        background-position: center;
+    }
+}
+.carousel-caption {
+    transform: translateY(-50%);
+    bottom: initial;
+    top: 50%;
+    h2 {
+        font-size: $font-size-exel;
+        font-weight: bold;
+        color: $primary;
+    }
+    p {
+        font-size: $font-size-small;
+        font-family: $font-secondary;
+        color: $tertiary;
+        font-weight: bold;
+        padding: 0 8px;
+    }
+}
+.banner {
+    height: 100px;
+    @include display (flex, column, center, center);
+    margin: 50px 10px 0px 10px;
+    h2 {
+        color: $primary;
+        font-weight: bold;
+    }
+    p {
+        margin: 0;
+        @include fonts ($font-secondary, $font-size-xs, bold);
+        text-align: center;
+        color: $secondary-op;
+    }
+}
+.bebidas {
+    height: 800px;
+    padding: 10px;
+    @include display (flex, column, space-evenly, center);
+}
+.box {
+    height: 190px;
+    width: 190px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 8px solid $tertiary;
+    background-color: $primary-op;
+    transition: all .3s;
+    h2 {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    &:hover {
+        transform: scale(1.2);
+        background-color: $tertiary;
+    }
+}
+.border {
+    width: 100%;
+    @include display (flex, row, center, center);
+    .rectangulo {
+        height: 25px;
+        width: 400px;
+        border-radius: 4px 4px 22px 22px;
+        background-color: $secondary-op;
+        h2 {
+            margin: 0;
+            font-size: $font-size-medium;
+            text-align: center;
+            color: $tertiary;
+        }
+    }
+}
+.comidas {
+    height: 580px;
+    padding: 10px;
+    @include display (flex, column, space-evenly, center);
+    margin-bottom: 20px;
+}
+
+// APARTADO DE EXPERENCIADC
+.contenedorBanner {
+    height: 250px;
+    .bannerExp {
+        width: 100%;
+        background-color: $primary-op;
+        h2 {
+            padding: 20px;
+            color: $tertiary;
+            @include fonts ($font-primary, $font-size-exlarge, bold);
+            text-align: center;
+        }
+    }
+    .subTitulo {
+        height: 120px;
+        width: 100%;
+        text-align: center;
+        @include display (flex, column, center, center);
+        p {
+            margin: 0 20px;
+            color: $primary-op;
+            @include fonts ($font-secondary, $font-size-medium, bold);
+        }
+    }
+}
+.contenedorOpciones {
+    .boxImg, .boxImg2 {
+        height: 100%;
+        @include display (flex, column, center, center);
+        .img, .img2 {
+            height: 300px;
+            width: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .texto, .texto2 {
+            height: 300px;
+            width: 100%;
+            background-color: #f2f0eb;
+            @include display (flex, column, center, center);
+            h2 {
+                color: rgb(0, 120, 88);
+                @include fonts ($font-primary, $font-size-exlarge, bold);
+            }
+            p {
+                margin: 0 20px;
+                color: $primary-op;
+                text-align: center;
+                @include fonts ($font-secondary, $font-size-small, bold);
+            }
+        }
+    }
+    .boxImg2 {
+        @include display (flex, column, center, center);
+    }
+}
+
+// APARTADO DE LOCALIZAR UBICACION
+.contenedorUbi {
+    @include display (flex, column, center, center);
+    background-color: $tertiary;
+    .opciones {
+        width: 100%;
+        .lugares {
+            width: 100%;
+            @include display (flex, column, center, center);
+            .boxUbi {
+                height: 135px;
+                width: 100%;
+                @include display (flex, column, center, center);
+                .direccion {
+                    height: 90px;
+                    width: 60%;
+                    text-align: center;
+                    h3 {
+                        @include fonts ($font-primary, $font-size-medium, bold);
+                        color: $primary;
+                    }
+                    p {
+                        @include fonts ($font-secondary, $font-size-xs, 100);
+                        margin: 0;
+                    }
+                }
+                .boton {
+                    height: 40px;
+                    button {
+                        padding: 3px 50px;
+                        border-radius: 5px;
+                        border: 1px solid transparent;
+                        background-color: $primary;
+                        color: $tertiary;
+                        font-size: $font-size-xs;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .ubicacion {
+        height: 100vh;
+        width: 100%;
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@import 'footer';
+@import 'mediaquerys';

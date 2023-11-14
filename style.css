@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 62.5%;
+  background-color: rgb(212, 233, 226);
+}
+
 .navbar-brand {
   margin-right: 0;
 }
@@ -45,40 +50,6 @@
   color: rgb(255, 0, 0);
 }
 
-@media only screen and (min-width: 768px) {
-  .contenedorMain {
-    flex-direction: row-reverse;
-  }
-  .contenedorMain .boxImg {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .contenedorMain .boxText {
-    width: 50%;
-  }
-  .contenedorMain .boxText h1 {
-    font-size: 4.1rem;
-  }
-  .contenedorMain .boxText p, .contenedorMain .boxText button {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-  .contenedorMain .boxText button {
-    font-size: 1.2rem;
-  }
-  .contenedorCards {
-    flex-direction: row;
-  }
-  .contenedorCards .cCard {
-    max-height: 470px;
-  }
-  .contenedorCards .cCard .cardBody h2 {
-    font-size: 1rem;
-  }
-}
 .contenedorMain {
   height: calc(100vh + 36px);
   display: flex;
@@ -105,7 +76,7 @@
   color: rgb(0, 117, 72);
   text-align: center;
   font-family: "Montserrat";
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 .contenedorMain .boxText p, .contenedorMain .boxText button {
@@ -196,8 +167,269 @@
   margin-bottom: 5px;
 }
 
+.bgImg1, .bgImg2, .bgImg3 {
+  height: calc(100vh - 80px);
+}
+
+.bgImg1 {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/bgImg1.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.bgImg2 {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/bgImg2.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.bgImg3 {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/bgImg3.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-caption {
+  transform: translateY(-50%);
+  bottom: initial;
+  top: 50%;
+}
+.carousel-caption h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: rgb(0, 117, 72);
+}
+.carousel-caption p, .carousel-caption .contenedorMain .boxText button, .contenedorMain .boxText .carousel-caption button {
+  font-size: 1.2rem;
+  font-family: "Mada";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+.banner {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 10px 0px 10px;
+}
+.banner h2 {
+  color: rgb(0, 117, 72);
+  font-weight: bold;
+}
+.banner p, .banner .contenedorMain .boxText button, .contenedorMain .boxText .banner button {
+  margin: 0;
+  font-family: "Mada";
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(51, 51, 51);
+}
+
+.bebidas {
+  height: 800px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box {
+  height: 190px;
+  width: 190px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  background-color: rgb(30, 57, 50);
+  transition: all 0.3s;
+}
+.box h2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.box:hover {
+  transform: scale(1.2);
+  background-color: rgb(255, 255, 255);
+}
+
+.border {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.border .rectangulo {
+  height: 25px;
+  width: 400px;
+  border-radius: 4px 4px 22px 22px;
+  background-color: rgb(51, 51, 51);
+}
+.border .rectangulo h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.comidas {
+  height: 580px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contenedorBanner {
+  height: 250px;
+}
+.contenedorBanner .bannerExp {
+  width: 100%;
+  background-color: rgb(30, 57, 50);
+}
+.contenedorBanner .bannerExp h2 {
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.contenedorBanner .subTitulo {
+  height: 120px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorBanner .subTitulo p, .contenedorBanner .subTitulo .contenedorMain .boxText button, .contenedorMain .boxText .contenedorBanner .subTitulo button {
+  margin: 0 20px;
+  color: rgb(30, 57, 50);
+  font-family: "Mada";
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.contenedorOpciones .boxImg, .contenedorOpciones .boxImg2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorOpciones .boxImg .img, .contenedorOpciones .boxImg .img2, .contenedorOpciones .boxImg2 .img, .contenedorOpciones .boxImg2 .img2 {
+  height: 300px;
+  width: 100%;
+}
+.contenedorOpciones .boxImg .img img, .contenedorOpciones .boxImg .img2 img, .contenedorOpciones .boxImg2 .img img, .contenedorOpciones .boxImg2 .img2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.contenedorOpciones .boxImg .texto, .contenedorOpciones .boxImg .texto2, .contenedorOpciones .boxImg2 .texto, .contenedorOpciones .boxImg2 .texto2 {
+  height: 300px;
+  width: 100%;
+  background-color: #f2f0eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorOpciones .boxImg .texto h2, .contenedorOpciones .boxImg .texto2 h2, .contenedorOpciones .boxImg2 .texto h2, .contenedorOpciones .boxImg2 .texto2 h2 {
+  color: rgb(0, 120, 88);
+  font-family: "Montserrat";
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contenedorOpciones .boxImg .texto p, .contenedorOpciones .boxImg .texto .contenedorMain .boxText button, .contenedorMain .boxText .contenedorOpciones .boxImg .texto button, .contenedorOpciones .boxImg .texto2 p, .contenedorOpciones .boxImg .texto2 .contenedorMain .boxText button, .contenedorMain .boxText .contenedorOpciones .boxImg .texto2 button, .contenedorOpciones .boxImg2 .texto p, .contenedorOpciones .boxImg2 .texto .contenedorMain .boxText button, .contenedorMain .boxText .contenedorOpciones .boxImg2 .texto button, .contenedorOpciones .boxImg2 .texto2 p, .contenedorOpciones .boxImg2 .texto2 .contenedorMain .boxText button, .contenedorMain .boxText .contenedorOpciones .boxImg2 .texto2 button {
+  margin: 0 20px;
+  color: rgb(30, 57, 50);
+  text-align: center;
+  font-family: "Mada";
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.contenedorOpciones .boxImg2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorUbi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.contenedorUbi .opciones {
+  width: 100%;
+}
+.contenedorUbi .opciones .lugares {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorUbi .opciones .lugares .boxUbi {
+  height: 135px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorUbi .opciones .lugares .boxUbi .direccion {
+  height: 90px;
+  width: 60%;
+  text-align: center;
+}
+.contenedorUbi .opciones .lugares .boxUbi .direccion h3 {
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(0, 117, 72);
+}
+.contenedorUbi .opciones .lugares .boxUbi .direccion p, .contenedorUbi .opciones .lugares .boxUbi .direccion .contenedorMain .boxText button, .contenedorMain .boxText .contenedorUbi .opciones .lugares .boxUbi .direccion button {
+  font-family: "Mada";
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 0;
+}
+.contenedorUbi .opciones .lugares .boxUbi .boton {
+  height: 40px;
+}
+.contenedorUbi .opciones .lugares .boxUbi .boton button {
+  padding: 3px 50px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: rgb(0, 117, 72);
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: bold;
+}
+.contenedorUbi .ubicacion {
+  height: 100vh;
+  width: 100%;
+}
+.contenedorUbi .ubicacion iframe {
+  height: 100%;
+  width: 100%;
+}
+
 .redesContenedores {
-  height: 80px;
+  height: 85px;
   padding: 10px 0;
   text-align: center;
   background-color: rgb(51, 51, 51);
@@ -210,6 +442,10 @@
 }
 .redesContenedores a:hover {
   color: rgb(0, 117, 72);
+}
+.redesContenedores p, .redesContenedores .contenedorMain .boxText button, .contenedorMain .boxText .redesContenedores button {
+  margin: 0;
+  font-size: 0.8rem;
 }
 
 .redesTexto {
@@ -252,9 +488,61 @@
     font-size: 1rem;
   }
 }
-body {
-  font-size: 62.5%;
-  background-color: rgb(212, 233, 226);
+@media only screen and (min-width: 576px) {
+  .carouselImgage {
+    height: calc(100vh + 20px);
+  }
+  .bebidas {
+    height: 230px;
+    width: 100%;
+    flex-direction: row;
+  }
+  .box {
+    height: 150px;
+    width: 150px;
+  }
+  .box img {
+    width: 100%;
+  }
+  .box h3 {
+    font-size: 1.2rem;
+  }
+  .comidas {
+    height: 280px;
+    width: 100%;
+    flex-direction: row;
+  }
+  .contenedorOpciones {
+    height: 100%;
+  }
+  .contenedorOpciones .boxImg {
+    flex-direction: row;
+  }
+  .contenedorOpciones .boxImg .img, .contenedorOpciones .boxImg .img2 {
+    height: 50vh;
+    width: 50vw;
+  }
+  .contenedorOpciones .boxImg .texto {
+    height: 50vh;
+    width: 50vw;
+  }
+  .contenedorOpciones .boxImg2 {
+    flex-direction: row-reverse;
+  }
+  .contenedorOpciones .boxImg2 .img, .contenedorOpciones .boxImg2 .img2 {
+    height: 50vh;
+    width: 50vw;
+  }
+  .contenedorOpciones .boxImg2 .texto2 {
+    height: 50vh;
+    width: 50vw;
+  }
+  .contenedorUbi {
+    flex-direction: row;
+  }
+  .contenedorUbi .boxUbi {
+    flex-direction: row !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

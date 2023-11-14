@@ -172,19 +172,19 @@ body {
 }
 
 .bgImg1 {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/bgImg1.webp");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/bgImg1.webp");
   background-size: cover;
   background-position: center;
 }
 
 .bgImg2 {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/bgImg2.webp");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/bgImg2.webp");
   background-size: cover;
   background-position: center;
 }
 
 .bgImg3 {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/bgImg3.webp");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/bgImg3.webp");
   background-size: cover;
   background-position: center;
 }

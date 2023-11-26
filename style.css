@@ -293,7 +293,7 @@ body {
   width: 100%;
   background-color: rgb(30, 57, 50);
 }
-.contenedorBanner .bannerExp h2 {
+.contenedorBanner .bannerExp h1 {
   padding: 20px;
   color: rgb(255, 255, 255);
   font-family: "Montserrat";
@@ -310,7 +310,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.contenedorBanner .subTitulo p, .contenedorBanner .subTitulo .contenedorMain .boxText button, .contenedorMain .boxText .contenedorBanner .subTitulo button {
+.contenedorBanner .subTitulo h2 {
   margin: 0 20px;
   color: rgb(30, 57, 50);
   font-family: "Mada";
@@ -344,7 +344,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.contenedorOpciones .boxImg .texto h2, .contenedorOpciones .boxImg .texto2 h2, .contenedorOpciones .boxImg2 .texto h2, .contenedorOpciones .boxImg2 .texto2 h2 {
+.contenedorOpciones .boxImg .texto h3, .contenedorOpciones .boxImg .texto2 h3, .contenedorOpciones .boxImg2 .texto h3, .contenedorOpciones .boxImg2 .texto2 h3 {
   color: rgb(0, 120, 88);
   font-family: "Montserrat";
   font-size: 2rem;

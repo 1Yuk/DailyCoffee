@@ -184,7 +184,7 @@
     .bannerExp {
         width: 100%;
         background-color: $primary-op;
-        h2 {
+        h1 {
             padding: 20px;
             color: $tertiary;
             @include fonts ($font-primary, $font-size-exlarge, bold);
@@ -196,7 +196,7 @@
         width: 100%;
         text-align: center;
         @include display (flex, column, center, center);
-        p {
+        h2 {
             margin: 0 20px;
             color: $primary-op;
             @include fonts ($font-secondary, $font-size-medium, bold);
@@ -222,7 +222,7 @@
             width: 100%;
             background-color: #f2f0eb;
             @include display (flex, column, center, center);
-            h2 {
+            h3 {
                 color: rgb(0, 120, 88);
                 @include fonts ($font-primary, $font-size-exlarge, bold);
             }

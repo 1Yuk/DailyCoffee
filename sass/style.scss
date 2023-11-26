@@ -290,5 +290,140 @@
     }
 }
 
+// APARTADO DE CONTACTO
+.contenedor {
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    .izquierda {
+        min-height: 100%;
+        width: 100%;
+        @include display (flex, column, center, center);
+        .rectangulo {
+            height: 50%;
+            width: 100%;
+            padding: 45px 0;
+            display: flex;
+            align-items: center;
+            background-color: $primary-op;
+            h1 {
+                margin: 0 20px;
+                text-align: center;
+                color: $tertiary;
+                @include fonts ($font-primary, $font-size-large, bold);
+                span {
+                    color: $primary;
+                }
+            }
+        }
+        .redesSociales {
+            height: 50%;
+            width: 100%;
+            padding: 74px 0;
+            background-color: $primary;
+            .texto {
+                height: 50px;
+                width: 100%;
+                margin: 15px 0;
+                text-align: center;
+                h2 {
+                    text-decoration: underline;
+                    margin: 0;
+                    color: $tertiary;
+                    @include fonts ($font-primary, $font-size-medium, bold);
+                }
+            }
+            .links {
+                height: 50%;
+                width: 100%;
+                @include display (flex, row, space-evenly, center);
+                a {
+                    height: 50px;
+                    width: 50px;
+                    padding: 5px 0;
+                    border-radius: 50%;
+                    background-color: $primary-op;
+                    text-align: center;
+                    text-decoration: none;
+                    color: $tertiary;
+                    transition: all .5s;
+                    &:hover  {
+                        color: $primary;
+                        background-color: $tertiary;
+                        transform: scale(1.2);
+                    }
+                    i {
+                        font-size: $font-size-large;
+                    }
+                }
+            }
+        }
+    }
+    .derecha {
+        height: 100vh;
+        width: 100%;
+        @include display (flex, column, center, center);
+        .form {
+            .cardForm {
+                padding: 2rem 1rem 0;
+                .input {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    position: relative;
+                    padding-top: 1.5rem;
+                    &+.input {
+                        margin-top: 1.5rem;
+                    }
+                    .txtarea {
+                        text-align: center;
+                        resize: none;
+                        border: 2px solid $primary;
+                        &:focus-visible {
+                            outline: none;
+                        }
+                    }
+                    .inputField {
+                        border: 0;
+                        z-index: 1;
+                        background-color: transparent;
+                        border-bottom: 2px solid rgb(237, 237, 237); 
+                        font: inherit;
+                        font-size: $font-size-small;
+                        padding: .25rem 0;
+                        &:focus, &:valid {
+                            outline: 0;
+                            border-bottom-color: $primary;
+                            &+.input-label {
+                                color: $primary;
+                                transform: translateY(-1.5rem);
+                            }
+                        }
+                    }
+                    .input-label {
+                        @include fonts ($font-secondary, $font-size-xs, bold);
+                        color: $primary-op;
+                        position: absolute;
+                        top: 1.5rem;
+                        transition: .25s ease;
+                    }
+                }
+            }
+            .action {
+                margin-top: 2rem;
+                .action-button {
+                    width: 100%;
+                    padding: 1rem;
+                    @include fonts ($font-primary, $font-size-small, bold);
+                    color: #FFF;
+                    background-color: $primary;
+                    border: transparent;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
 @import 'footer';
 @import 'mediaquerys';

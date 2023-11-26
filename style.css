@@ -428,6 +428,154 @@ body {
   width: 100%;
 }
 
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.contenedor .izquierda {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor .izquierda .rectangulo {
+  height: 50%;
+  width: 100%;
+  padding: 45px 0;
+  display: flex;
+  align-items: center;
+  background-color: rgb(30, 57, 50);
+}
+.contenedor .izquierda .rectangulo h1 {
+  margin: 0 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.contenedor .izquierda .rectangulo h1 span {
+  color: rgb(0, 117, 72);
+}
+.contenedor .izquierda .redesSociales {
+  height: 50%;
+  width: 100%;
+  padding: 74px 0;
+  background-color: rgb(0, 117, 72);
+}
+.contenedor .izquierda .redesSociales .texto {
+  height: 50px;
+  width: 100%;
+  margin: 15px 0;
+  text-align: center;
+}
+.contenedor .izquierda .redesSociales .texto h2 {
+  text-decoration: underline;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.contenedor .izquierda .redesSociales .links {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contenedor .izquierda .redesSociales .links a {
+  height: 50px;
+  width: 50px;
+  padding: 5px 0;
+  border-radius: 50%;
+  background-color: rgb(30, 57, 50);
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+.contenedor .izquierda .redesSociales .links a:hover {
+  color: rgb(0, 117, 72);
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.2);
+}
+.contenedor .izquierda .redesSociales .links a i {
+  font-size: 1.6rem;
+}
+.contenedor .derecha {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor .derecha .form .cardForm {
+  padding: 2rem 1rem 0;
+}
+.contenedor .derecha .form .cardForm .input {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 1.5rem;
+}
+.contenedor .derecha .form .cardForm .input + .input {
+  margin-top: 1.5rem;
+}
+.contenedor .derecha .form .cardForm .input .txtarea {
+  text-align: center;
+  resize: none;
+  border: 2px solid rgb(0, 117, 72);
+}
+.contenedor .derecha .form .cardForm .input .txtarea:focus-visible {
+  outline: none;
+}
+.contenedor .derecha .form .cardForm .input .inputField {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(237, 237, 237);
+  font: inherit;
+  font-size: 1.2rem;
+  padding: 0.25rem 0;
+}
+.contenedor .derecha .form .cardForm .input .inputField:focus, .contenedor .derecha .form .cardForm .input .inputField:valid {
+  outline: 0;
+  border-bottom-color: rgb(0, 117, 72);
+}
+.contenedor .derecha .form .cardForm .input .inputField:focus + .input-label, .contenedor .derecha .form .cardForm .input .inputField:valid + .input-label {
+  color: rgb(0, 117, 72);
+  transform: translateY(-1.5rem);
+}
+.contenedor .derecha .form .cardForm .input .input-label {
+  font-family: "Mada";
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(30, 57, 50);
+  position: absolute;
+  top: 1.5rem;
+  transition: 0.25s ease;
+}
+.contenedor .derecha .form .action {
+  margin-top: 2rem;
+}
+.contenedor .derecha .form .action .action-button {
+  width: 100%;
+  padding: 1rem;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FFF;
+  background-color: rgb(0, 117, 72);
+  border: transparent;
+  border-radius: 5px;
+}
+
 .redesContenedores {
   height: 85px;
   padding: 10px 0;
@@ -542,6 +690,18 @@ body {
   }
   .contenedorUbi .boxUbi {
     flex-direction: row !important;
+  }
+  .contenedor {
+    flex-direction: row;
+  }
+  .contenedor .izquierda {
+    width: 50%;
+  }
+  .contenedor .izquierda .rectangulo {
+    height: 100%;
+  }
+  .contenedor .derecha {
+    width: 50%;
   }
 }
 

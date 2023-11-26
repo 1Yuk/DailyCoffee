@@ -1,3 +1,6 @@
+@media only screen and (min-width: 1024px) {
+}
+
 @media only screen and (min-width: 768px) {
     .contenedorMain {
         flex-direction: row-reverse;
@@ -88,6 +91,18 @@
         flex-direction: row;
         .boxUbi {
             flex-direction: row !important;
+        }
+    }
+    .contenedor {
+        flex-direction: row;
+        .izquierda {
+            width: 50%;
+            .rectangulo {
+                height: 100%;
+            }
+        }
+        .derecha {
+            width: 50%;
         }
     }
 }
